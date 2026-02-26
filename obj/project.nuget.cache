@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "n18jVX32+KE=",
+  "dgSpecHash": "pp2A62AjPtg=",
   "success": true,
   "projectFilePath": "F:\\Code\\.Net\\TrueNasMCP\\TrueNasMCP.csproj",
   "expectedPackageFiles": [
@@ -23,6 +23,7 @@
     "C:\\Users\\rasmu\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\10.0.3\\microsoft.extensions.filesystemglobbing.10.0.3.nupkg.sha512",
     "C:\\Users\\rasmu\\.nuget\\packages\\microsoft.extensions.hosting\\10.0.3\\microsoft.extensions.hosting.10.0.3.nupkg.sha512",
     "C:\\Users\\rasmu\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\10.0.3\\microsoft.extensions.hosting.abstractions.10.0.3.nupkg.sha512",
+    "C:\\Users\\rasmu\\.nuget\\packages\\microsoft.extensions.http\\10.0.3\\microsoft.extensions.http.10.0.3.nupkg.sha512",
     "C:\\Users\\rasmu\\.nuget\\packages\\microsoft.extensions.logging\\10.0.3\\microsoft.extensions.logging.10.0.3.nupkg.sha512",
     "C:\\Users\\rasmu\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\10.0.3\\microsoft.extensions.logging.abstractions.10.0.3.nupkg.sha512",
     "C:\\Users\\rasmu\\.nuget\\packages\\microsoft.extensions.logging.configuration\\10.0.3\\microsoft.extensions.logging.configuration.10.0.3.nupkg.sha512",

@@ -8,7 +8,7 @@ public class TrueNasClient
 {
    private readonly HttpClient _http;
 
-   private TrueNasClient(HttpClient http, IOptions<AppSettings> settings)
+   public TrueNasClient(HttpClient http, IOptions<AppSettings> settings)
    {
       _http = http;
       _http.BaseAddress = new Uri(settings.Value.BaseUrl);

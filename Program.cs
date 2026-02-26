@@ -3,6 +3,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Configuration;
 using TrueNasMCP.Settings;
+using TrueNasMCP.TrueNas;
+using TrueNasMCP.Mcp;
 
 namespace TrueNasMCP;
 
@@ -26,7 +28,9 @@ static class Program
     {
         var builder = Host.CreateApplicationBuilder();
 
-        builder.Configuration.AddJsonFile("secrets.json", optional: true);
+        var secretsPath = Path.Combine(AppContext.BaseDirectory, "secrets.json");
+
+        builder.Configuration.AddJsonFile(secretsPath, optional: true);
 
         builder.Services
             .Configure<AppSettings>(builder.Configuration.GetSection("TrueNas"))
@@ -34,7 +38,7 @@ static class Program
             .Services
             .AddMcpServer()
             .WithStdioServerTransport()
-            .WithToolsFromAssembly();
+            .WithTools<TrueNasTools>();
 
         builder.Logging.ClearProviders();
 
