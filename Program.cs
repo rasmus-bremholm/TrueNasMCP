@@ -35,6 +35,10 @@ static class Program
         builder.Services
             .Configure<AppSettings>(builder.Configuration.GetSection("TrueNas"))
             .AddHttpClient<TrueNasClient>()
+            .ConfigurePrimaryHttpMessageHandler(() => new HttpClientHandler
+            {
+                ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator
+            })
             .Services
             .AddMcpServer()
             .WithStdioServerTransport()

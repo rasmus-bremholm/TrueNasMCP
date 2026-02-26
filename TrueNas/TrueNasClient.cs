@@ -17,8 +17,8 @@ public class TrueNasClient
 
    public async Task<string> GetRawAsync(string endpoint)
    {
-      var response = await _http.GetAsync($"/api/v2.0/{endpoint}");
+      var response = await _http.GetAsync($"/api/v2.0/{endpoint}").ConfigureAwait(false);
       response.EnsureSuccessStatusCode();
-      return await response.Content.ReadAsStringAsync();
+      return await response.Content.ReadAsStringAsync().ConfigureAwait(false);
    }
 }

@@ -24,6 +24,13 @@ public class TrueNasTools
    [McpServerTool, Description("Get storage pool information including capacity and health.")]
    public async Task<string> GetStoragePools()
    {
-      return await _client.GetRawAsync("pool");
+      try
+      {
+         return await _client.GetRawAsync("pool").ConfigureAwait(false);
+      }
+      catch (Exception ex)
+      {
+         return $"ERROR: {ex.GetType().Name}: {ex.Message}";
+      }
    }
 }
