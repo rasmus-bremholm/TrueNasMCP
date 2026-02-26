@@ -59,6 +59,9 @@ public class TrayApplicationContext : ApplicationContext
 
       var app = builder.Build();
 
+      // Dont forget this dumbass.
+      app.MapMcp();
+
       return app;
    }
 
