@@ -50,7 +50,11 @@
         "net9.0-windows7.0": {
           "targetAlias": "net9.0-windows",
           "dependencies": {
-            "ModelContextProtocol.AspNetCore": {
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[10.0.3, )"
+            },
+            "ModelContextProtocol": {
               "target": "Package",
               "version": "[1.0.0, )"
             }
