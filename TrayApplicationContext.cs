@@ -1,12 +1,26 @@
-using System.Drawing.Text;
 namespace TrueNasMCP;
+
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.DependencyInjection;
+using TrueNasMCP.Mcp;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.Logging;
 
 public class TrayApplicationContext : ApplicationContext
 {
    private readonly NotifyIcon _trayIcon;
+   private readonly IHost _host;
+   private readonly CancellationTokenSource _cst = new();
 
    public TrayApplicationContext()
    {
+      // Its like a small Asp.Net app living inside my app to handle HTTP requests.
+      _host = CreateHost();
+
+      Task.Run(() => _host.RunAsync(_cst.Token));
+
+
+
       var contextMenu = new ContextMenuStrip();
       contextMenu.Items.Add("Status: Starting...", null).Enabled = false;
       contextMenu.Items.Add(new ToolStripSeparator());
@@ -29,6 +43,23 @@ public class TrayApplicationContext : ApplicationContext
          tipText: "MCP server is starting...",
          tipIcon: ToolTipIcon.Info
       );
+   }
+
+   private static IHost CreateHost()
+   {
+      var builder = WebApplication.CreateBuilder();
+
+      builder.Services
+      .AddMcpServer()
+      .WithHttpTransport()
+      .WithToolsFromAssembly();
+
+      // This just disables ASP .Net from console logging.
+      builder.Logging.ClearProviders();
+
+      var app = builder.Build();
+
+      return app;
    }
 
    private void OnExit(object? sender, EventArgs e)
