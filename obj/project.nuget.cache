@@ -1,8 +1,27 @@
 {
   "version": 2,
-  "dgSpecHash": "um6NerHygdE=",
+  "dgSpecHash": "lSqmUOE8CmQ=",
   "success": true,
   "projectFilePath": "F:\\Code\\.Net\\TrueNasMCP\\TrueNasMCP.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\rasmu\\.nuget\\packages\\microsoft.extensions.ai.abstractions\\10.3.0\\microsoft.extensions.ai.abstractions.10.3.0.nupkg.sha512",
+    "C:\\Users\\rasmu\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\10.0.3\\microsoft.extensions.caching.abstractions.10.0.3.nupkg.sha512",
+    "C:\\Users\\rasmu\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\10.0.3\\microsoft.extensions.configuration.abstractions.10.0.3.nupkg.sha512",
+    "C:\\Users\\rasmu\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.3\\microsoft.extensions.dependencyinjection.abstractions.10.0.3.nupkg.sha512",
+    "C:\\Users\\rasmu\\.nuget\\packages\\microsoft.extensions.diagnostics.abstractions\\10.0.3\\microsoft.extensions.diagnostics.abstractions.10.0.3.nupkg.sha512",
+    "C:\\Users\\rasmu\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\10.0.3\\microsoft.extensions.fileproviders.abstractions.10.0.3.nupkg.sha512",
+    "C:\\Users\\rasmu\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\10.0.3\\microsoft.extensions.hosting.abstractions.10.0.3.nupkg.sha512",
+    "C:\\Users\\rasmu\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\10.0.3\\microsoft.extensions.logging.abstractions.10.0.3.nupkg.sha512",
+    "C:\\Users\\rasmu\\.nuget\\packages\\microsoft.extensions.options\\10.0.3\\microsoft.extensions.options.10.0.3.nupkg.sha512",
+    "C:\\Users\\rasmu\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.3\\microsoft.extensions.primitives.10.0.3.nupkg.sha512",
+    "C:\\Users\\rasmu\\.nuget\\packages\\modelcontextprotocol\\1.0.0\\modelcontextprotocol.1.0.0.nupkg.sha512",
+    "C:\\Users\\rasmu\\.nuget\\packages\\modelcontextprotocol.aspnetcore\\1.0.0\\modelcontextprotocol.aspnetcore.1.0.0.nupkg.sha512",
+    "C:\\Users\\rasmu\\.nuget\\packages\\modelcontextprotocol.core\\1.0.0\\modelcontextprotocol.core.1.0.0.nupkg.sha512",
+    "C:\\Users\\rasmu\\.nuget\\packages\\system.diagnostics.diagnosticsource\\10.0.3\\system.diagnostics.diagnosticsource.10.0.3.nupkg.sha512",
+    "C:\\Users\\rasmu\\.nuget\\packages\\system.io.pipelines\\10.0.3\\system.io.pipelines.10.0.3.nupkg.sha512",
+    "C:\\Users\\rasmu\\.nuget\\packages\\system.net.serversentevents\\10.0.3\\system.net.serversentevents.10.0.3.nupkg.sha512",
+    "C:\\Users\\rasmu\\.nuget\\packages\\system.text.encodings.web\\10.0.3\\system.text.encodings.web.10.0.3.nupkg.sha512",
+    "C:\\Users\\rasmu\\.nuget\\packages\\system.text.json\\10.0.3\\system.text.json.10.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
