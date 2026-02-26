@@ -1,4 +1,5 @@
 using System.Drawing.Text;
+namespace TrueNasMCP;
 
 public class TrayApplicationContext : ApplicationContext
 {
@@ -11,6 +12,7 @@ public class TrayApplicationContext : ApplicationContext
       contextMenu.Items.Add(new ToolStripSeparator());
       contextMenu.Items.Add("Quit", null, OnExit);
 
+      // Just the tray icon config.
       _trayIcon = new NotifyIcon
       {
          Icon = SystemIcons.Information, // swap for real icon later
@@ -19,6 +21,8 @@ public class TrayApplicationContext : ApplicationContext
          Visible = true
       };
 
+
+      // BalloonTip makes a little cute windows snackbar.
       _trayIcon.ShowBalloonTip(
          timeout: 3000,
          tipTitle: "TrueNAS MCP",
