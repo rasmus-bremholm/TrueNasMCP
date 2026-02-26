@@ -1,3 +1,5 @@
+using System.Drawing.Text;
+
 public class TrayApplicationContext : ApplicationContext
 {
    private readonly NotifyIcon _trayIcon;
@@ -23,7 +25,20 @@ public class TrayApplicationContext : ApplicationContext
          tipText: "MCP server is starting...",
          tipIcon: ToolTipIcon.Info
       );
+   }
 
-      
+   private void OnExit(object? sender, EventArgs e)
+   {
+      _trayIcon.Visible = false;
+      Application.Exit();
+   }
+
+   protected override void Dispose(bool disposing)
+   {
+      if(disposing)
+      {
+         _trayIcon.Dispose();
+      }
+      base.Dispose(disposing);
    }
 }
