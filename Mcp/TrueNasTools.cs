@@ -85,4 +85,18 @@ public class TrueNasTools
          return $"ERROR: {ex.GetType().Name}: {ex.Message}";
       }
    }
+
+
+   [McpServerTool, Description("Get SMART test results for all disks.")]
+   public async Task<string> GetSmartResults()
+   {
+      try
+      {
+         return await _client.GetRawAsync("smart/test/results").ConfigureAwait(false);
+      }
+      catch (Exception ex)
+      {
+         return $"ERROR: {ex.GetType().Name}: {ex.Message}";
+      }
+   }
 }
