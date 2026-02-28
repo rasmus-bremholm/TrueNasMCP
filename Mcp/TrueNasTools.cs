@@ -99,4 +99,18 @@ public class TrueNasTools
          return $"ERROR: {ex.GetType().Name}: {ex.Message}";
       }
    }
+
+   [McpServerTool, Description("Get status and details for a specific TrueNAS app by name.")]
+   public async Task<string> GetApp(
+      [Description("The name of the app, e.g. 'plex'")] string appName)
+   {
+      try
+      {
+         return await _client.GetRawAsync($"app/id/{appName}").ConfigureAwait(false);
+      }
+      catch (Exception ex)
+      {
+         return $"ERROR: {ex.GetType().Name}: {ex.Message}";
+      }
+   }
 }
