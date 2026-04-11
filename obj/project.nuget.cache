@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6tpkrhAEE1U=",
+  "dgSpecHash": "10BCCEJxSTc=",
   "success": true,
   "projectFilePath": "F:\\Code\\.Net\\TrueNasMCP\\TrueNasMCP.csproj",
   "expectedPackageFiles": [
@@ -41,7 +41,11 @@
     "C:\\Users\\rasmu\\.nuget\\packages\\system.io.pipelines\\10.0.3\\system.io.pipelines.10.0.3.nupkg.sha512",
     "C:\\Users\\rasmu\\.nuget\\packages\\system.net.serversentevents\\10.0.3\\system.net.serversentevents.10.0.3.nupkg.sha512",
     "C:\\Users\\rasmu\\.nuget\\packages\\system.text.encodings.web\\10.0.3\\system.text.encodings.web.10.0.3.nupkg.sha512",
-    "C:\\Users\\rasmu\\.nuget\\packages\\system.text.json\\10.0.3\\system.text.json.10.0.3.nupkg.sha512"
+    "C:\\Users\\rasmu\\.nuget\\packages\\system.text.json\\10.0.3\\system.text.json.10.0.3.nupkg.sha512",
+    "C:\\Users\\rasmu\\.nuget\\packages\\microsoft.netcore.app.ref\\9.0.12\\microsoft.netcore.app.ref.9.0.12.nupkg.sha512",
+    "C:\\Users\\rasmu\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\9.0.12\\microsoft.windowsdesktop.app.ref.9.0.12.nupkg.sha512",
+    "C:\\Users\\rasmu\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\9.0.12\\microsoft.aspnetcore.app.ref.9.0.12.nupkg.sha512",
+    "C:\\Users\\rasmu\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\9.0.12\\microsoft.netcore.app.host.win-x64.9.0.12.nupkg.sha512"
   ],
   "logs": []
 }
